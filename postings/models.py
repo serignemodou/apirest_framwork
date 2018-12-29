@@ -8,6 +8,8 @@ class BlogUser(models.Model):
     title = models.CharField(max_length=200, null=True, blank=True)
     content = models.CharField(max_length=20, null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
+    telephone = models.IntegerField()
+    
 
     def __str__(self):
         return str(self.userid.username)
